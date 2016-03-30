@@ -1,0 +1,5 @@
+Bugs:
+1) No decimal input 
+2) Displays only 5 digits
+3) Keyboard support
+4) )/0 exception handling.
