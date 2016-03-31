@@ -59,7 +59,11 @@ class Calculator(QDialog, calc_ui.Ui_calc):
             elif Calculator.op=="*":
                 Calculator.res = Calculator.var1 * Calculator.inp
             elif Calculator.op=="/":
-                Calculator.res = Calculator.var1 / Calculator.inp
+                try:
+                    Calculator.res = Calculator.var1 / Calculator.inp
+                except ZeroDivisionError:
+                    QMessageBox.information(self, "Error", "Cannot divide zero by zero")
+                    self.clear_all()
 
         else:
             Calculator.res = Calculator.inp
