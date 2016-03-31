@@ -31,7 +31,6 @@ class Calculator(QDialog, calc_ui.Ui_calc):
         self.div.clicked.connect(lambda: self.eval("/"))
         self.equals.clicked.connect(lambda: self.eval("="))
 
-
     res, inp , op, var1= 0, 0, "", 0
 
 
@@ -62,7 +61,7 @@ class Calculator(QDialog, calc_ui.Ui_calc):
                 try:
                     Calculator.res = Calculator.var1 / Calculator.inp
                 except ZeroDivisionError:
-                    QMessageBox.information(self, "Error", "Cannot divide zero by zero")
+                    QMessageBox.information(self, "Error", "Cannot divide by zero")
                     self.clear_all()
 
         else:
