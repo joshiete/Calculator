@@ -90,7 +90,6 @@ class Calculator(QDialog, calc_ui.Ui_calc):
         #sets flag to 1 to trigger decimal mode
         Calculator.flag = 1
         Calculator.dec = str(Calculator.inp)+"."
-        print(Calculator.dec)
 
 
 
