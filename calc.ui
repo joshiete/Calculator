@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>calc</class>
@@ -25,7 +24,7 @@
     <rect>
      <x>10</x>
      <y>387</y>
-     <width>101</width>
+     <width>111</width>
      <height>51</height>
     </rect>
    </property>
@@ -57,7 +56,7 @@
     <rect>
      <x>10</x>
      <y>230</y>
-     <width>101</width>
+     <width>111</width>
      <height>71</height>
     </rect>
    </property>
@@ -87,9 +86,9 @@
   <widget class="QPushButton" name="value_2">
    <property name="geometry">
     <rect>
-     <x>140</x>
+     <x>130</x>
      <y>150</y>
-     <width>101</width>
+     <width>121</width>
      <height>71</height>
     </rect>
    </property>
@@ -103,9 +102,9 @@
   <widget class="QPushButton" name="value_3">
    <property name="geometry">
     <rect>
-     <x>270</x>
+     <x>260</x>
      <y>150</y>
-     <width>101</width>
+     <width>111</width>
      <height>71</height>
     </rect>
    </property>
@@ -119,9 +118,9 @@
   <widget class="QPushButton" name="value_9">
    <property name="geometry">
     <rect>
-     <x>270</x>
+     <x>260</x>
      <y>310</y>
-     <width>101</width>
+     <width>111</width>
      <height>71</height>
     </rect>
    </property>
@@ -137,7 +136,7 @@
     <rect>
      <x>10</x>
      <y>150</y>
-     <width>101</width>
+     <width>111</width>
      <height>71</height>
     </rect>
    </property>
@@ -153,7 +152,7 @@
     <rect>
      <x>10</x>
      <y>310</y>
-     <width>101</width>
+     <width>111</width>
      <height>71</height>
     </rect>
    </property>
@@ -183,9 +182,9 @@
   <widget class="QPushButton" name="value_6">
    <property name="geometry">
     <rect>
-     <x>270</x>
+     <x>260</x>
      <y>230</y>
-     <width>101</width>
+     <width>111</width>
      <height>71</height>
     </rect>
    </property>
@@ -199,9 +198,9 @@
   <widget class="QPushButton" name="value_5">
    <property name="geometry">
     <rect>
-     <x>140</x>
+     <x>130</x>
      <y>230</y>
-     <width>101</width>
+     <width>121</width>
      <height>71</height>
     </rect>
    </property>
@@ -250,9 +249,9 @@
   <widget class="QPushButton" name="value_8">
    <property name="geometry">
     <rect>
-     <x>140</x>
+     <x>130</x>
      <y>310</y>
-     <width>101</width>
+     <width>121</width>
      <height>71</height>
     </rect>
    </property>
@@ -266,9 +265,9 @@
   <widget class="QPushButton" name="clear_p">
    <property name="geometry">
     <rect>
-     <x>270</x>
+     <x>260</x>
      <y>387</y>
-     <width>101</width>
+     <width>111</width>
      <height>51</height>
     </rect>
    </property>
@@ -317,9 +316,9 @@
   <widget class="QPushButton" name="decimal">
    <property name="geometry">
     <rect>
-     <x>140</x>
+     <x>130</x>
      <y>387</y>
-     <width>101</width>
+     <width>121</width>
      <height>51</height>
     </rect>
    </property>
@@ -351,357 +350,3 @@
  <resources/>
  <connections/>
 </ui>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<ui version="4.0">
- <class>calc</class>
- <widget class="QDialog" name="calc">
-  <property name="geometry">
-   <rect>
-    <x>0</x>
-    <y>0</y>
-    <width>557</width>
-    <height>453</height>
-   </rect>
-  </property>
-  <property name="windowTitle">
-   <string>xCalc</string>
-  </property>
-  <property name="sizeGripEnabled">
-   <bool>true</bool>
-  </property>
-  <property name="modal">
-   <bool>true</bool>
-  </property>
-  <widget class="QPushButton" name="value_0">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>387</y>
-     <width>101</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>0</string>
-   </property>
-   <property name="autoDefault">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="add">
-   <property name="geometry">
-    <rect>
-     <x>380</x>
-     <y>150</y>
-     <width>161</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>+</string>
-   </property>
-   <property name="autoDefault">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="value_4">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>230</y>
-     <width>101</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>4</string>
-   </property>
-   <property name="autoDefault">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="sub">
-   <property name="geometry">
-    <rect>
-     <x>380</x>
-     <y>200</y>
-     <width>161</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>-</string>
-   </property>
-   <property name="autoDefault">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="value_2">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>150</y>
-     <width>101</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>2</string>
-   </property>
-   <property name="autoDefault">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="value_3">
-   <property name="geometry">
-    <rect>
-     <x>270</x>
-     <y>150</y>
-     <width>101</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>3</string>
-   </property>
-   <property name="autoDefault">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="value_9">
-   <property name="geometry">
-    <rect>
-     <x>270</x>
-     <y>310</y>
-     <width>101</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>9</string>
-   </property>
-   <property name="autoDefault">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="value_1">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>150</y>
-     <width>101</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>1</string>
-   </property>
-   <property name="autoDefault">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="value_7">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>310</y>
-     <width>101</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>7</string>
-   </property>
-   <property name="autoDefault">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="div">
-   <property name="geometry">
-    <rect>
-     <x>380</x>
-     <y>300</y>
-     <width>161</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>/</string>
-   </property>
-   <property name="autoDefault">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="value_6">
-   <property name="geometry">
-    <rect>
-     <x>270</x>
-     <y>230</y>
-     <width>101</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>6</string>
-   </property>
-   <property name="autoDefault">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="value_5">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>230</y>
-     <width>101</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>5</string>
-   </property>
-   <property name="autoDefault">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="mul">
-   <property name="geometry">
-    <rect>
-     <x>380</x>
-     <y>250</y>
-     <width>161</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>*</string>
-   </property>
-   <property name="autoDefault">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QLCDNumber" name="calc_display">
-   <property name="geometry">
-    <rect>
-     <x>11</x>
-     <y>11</y>
-     <width>531</width>
-     <height>131</height>
-    </rect>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
-   </property>
-   <property name="smallDecimalPoint">
-    <bool>true</bool>
-   </property>
-   <property name="value" stdset="0">
-    <double>0.000000000000000</double>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="value_8">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>310</y>
-     <width>101</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>8</string>
-   </property>
-   <property name="autoDefault">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="clear_p">
-   <property name="geometry">
-    <rect>
-     <x>270</x>
-     <y>387</y>
-     <width>101</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>C</string>
-   </property>
-   <property name="autoDefault">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="equals">
-   <property name="geometry">
-    <rect>
-     <x>380</x>
-     <y>350</y>
-     <width>161</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>=</string>
-   </property>
-   <property name="autoDefault">
-    <bool>false</bool>
-   </property>
-   <property name="default">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="clear_a">
-   <property name="geometry">
-    <rect>
-     <x>380</x>
-     <y>397</y>
-     <width>161</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>AC</string>
-   </property>
-   <property name="autoDefault">
-    <bool>false</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="decimal">
-   <property name="geometry">
-    <rect>
-     <x>140</x>
-     <y>387</y>
-     <width>101</width>
-     <height>51</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>.</string>
-   </property>
-   <property name="autoDefault">
-    <bool>false</bool>
-   </property>
-  </widget>
- </widget>
- <tabstops>
-  <tabstop>value_1</tabstop>
-  <tabstop>value_2</tabstop>
-  <tabstop>value_3</tabstop>
-  <tabstop>value_4</tabstop>
-  <tabstop>value_5</tabstop>
-  <tabstop>value_6</tabstop>
-  <tabstop>value_7</tabstop>
-  <tabstop>value_8</tabstop>
-  <tabstop>value_9</tabstop>
-  <tabstop>value_0</tabstop>
-  <tabstop>equals</tabstop>
-  <tabstop>add</tabstop>
-  <tabstop>sub</tabstop>
-  <tabstop>mul</tabstop>
-  <tabstop>div</tabstop>
- </tabstops>
- <resources/>
- <connections/>
-</ui>
->>>>>>> origin/1.0
