@@ -12,7 +12,7 @@ class Calculator(QDialog, calc_ui.Ui_calc):
         self.setupUi(self)
         self.setFocus()
 
-
+        #button actions handled here
         self.clear_a.clicked.connect(self.clear_all)
         self.clear_p.clicked.connect(self.delete_num)
         self.value_0.clicked.connect(lambda: self.enter_num(0))
@@ -30,27 +30,39 @@ class Calculator(QDialog, calc_ui.Ui_calc):
         self.mul.clicked.connect(lambda: self.eval("*"))
         self.div.clicked.connect(lambda: self.eval("/"))
         self.equals.clicked.connect(lambda: self.eval("="))
+        self.decimal.clicked.connect(lambda: self.dec_mode())
 
-
-    res, inp , op, var1= 0, 0, "", 0
+    #res to hold result of the operation, inp to get input value, op to determine operation to perform, var1 to hold previous input value, flag to determine whether the input value is going into decimal range, dec to old the string form of the float number
+    res, inp , op, var1, flag, dec= 0, 0, "", 0, 0, ""
 
 
 
     def clear_all(self):
+        #Clears all variables
         Calculator.inp, Calculator.res, Calculator.var1, Calculator.op = 0, 0, 0, ""
         self.calc_display.display(Calculator.res)
 
 
     def delete_num(self):
+        #delets one numeal at a time from a number
         Calculator.res = Calculator.res//10
         self.calc_display.display(Calculator.res)
 
 
     def enter_num(self, num):
-        Calculator.inp = Calculator.inp*10 + num
-        self.calc_display.display(Calculator.inp)
+        #inputs numerals to the number on key press
+        if Calculator.flag==0:
+            Calculator.inp = Calculator.inp*10 + num
+            self.calc_display.display(Calculator.inp)
+        else:
+            Calculator.dec += str(num)
+            Calculator.inp = float(Calculator.dec)
+            self.calc_display.display(Calculator.inp)
+
 
     def eval(self, op):
+        #evaluates the result
+        Calculator.flag = 0
         if Calculator.op!="":
             if Calculator.op=="+":
                 Calculator.res = Calculator.var1 + Calculator.inp
@@ -62,7 +74,7 @@ class Calculator(QDialog, calc_ui.Ui_calc):
                 try:
                     Calculator.res = Calculator.var1 / Calculator.inp
                 except ZeroDivisionError:
-                    QMessageBox.information(self, "Error", "Cannot divide zero by zero")
+                    QMessageBox.information(self, "Error", "Cannot divide by zero")
                     self.clear_all()
 
         else:
@@ -72,6 +84,14 @@ class Calculator(QDialog, calc_ui.Ui_calc):
         self.calc_display.display(Calculator.res)
         Calculator.var1 = Calculator.res
         Calculator.inp = 0
+
+
+    def dec_mode(self):
+        #sets flag to 1 to trigger decimal mode
+        Calculator.flag = 1
+        Calculator.dec = str(Calculator.inp)+"."
+        print(Calculator.dec)
+
 
 
 
